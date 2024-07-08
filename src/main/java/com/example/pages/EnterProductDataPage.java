@@ -11,41 +11,44 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class EnterProductDataPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id = "startdate")
-    WebElement startDate;
+    private WebElement startDate;
 
     @FindBy(id = "insurancesum")
-    WebElement insuranceSum;
+    private WebElement insuranceSum;
 
     @FindBy(id = "meritrating")
-    WebElement meritRating;
+    private WebElement meritRating;
 
     @FindBy(id = "damageinsurance")
-    WebElement damageInsurance;
+    private WebElement damageInsurance;
 
     @FindBy(id = "EuroProtection")
-    WebElement euroProtection;
+    private WebElement euroProtection;
 
     @FindBy(id = "courtesycar")
-    WebElement courtesyCar;
+    private WebElement courtesyCar;
 
     @FindBy(id = "nextselectpriceoption")
-    WebElement nextButton;
+    private WebElement nextButton;
 
     public EnterProductDataPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public void fillProductData(String date, String sum, String rating, String damage, String products, String car) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    public void fillProductData() {
+        fillProductData("02/03/2025", "3000000", "Bonus 1", "Full Coverage", "Euro Protection", "Yes");
+    }
 
-        wait.until(ExpectedConditions.visibilityOf(startDate)).sendKeys(date);
-        wait.until(ExpectedConditions.visibilityOf(insuranceSum)).sendKeys(sum);
-        wait.until(ExpectedConditions.visibilityOf(meritRating)).sendKeys(rating);
-        wait.until(ExpectedConditions.visibilityOf(damageInsurance)).sendKeys(damage);
+    public void fillProductData(String startDate, String insuranceSum, String meritRating, String damageInsurance, String products, String courtesyCar) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOf(this.startDate)).sendKeys(startDate);
+        wait.until(ExpectedConditions.visibilityOf(this.insuranceSum)).sendKeys(insuranceSum);
+        wait.until(ExpectedConditions.visibilityOf(this.meritRating)).sendKeys(meritRating);
+        wait.until(ExpectedConditions.visibilityOf(this.damageInsurance)).sendKeys(damageInsurance);
 
         if (products.contains("Euro Protection")) {
             wait.until(ExpectedConditions.visibilityOf(euroProtection));
@@ -53,13 +56,12 @@ public class EnterProductDataPage {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", euroProtection);
             }
         }
-
-        wait.until(ExpectedConditions.visibilityOf(courtesyCar)).sendKeys(car);
+        wait.until(ExpectedConditions.visibilityOf(this.courtesyCar)).sendKeys(courtesyCar);
     }
 
     public void clickNext() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOf(nextButton));
         wait.until(ExpectedConditions.elementToBeClickable(nextButton)).click();
     }
 }
+

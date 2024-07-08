@@ -1,0 +1,6 @@
+com\example\pages\EnterProductDataPage.class
+com\example\pages\EnterVehicleDataPage.class
+com\example\pages\SendQuotePage.class
+com\example\pages\EnterInsurantDataPage.class
+org\example\Main.class
+com\example\pages\SelectPriceOptionPage.class

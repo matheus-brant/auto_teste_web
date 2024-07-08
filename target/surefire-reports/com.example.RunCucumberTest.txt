@@ -1,0 +1,466 @@
+-------------------------------------------------------------------------------
+Test set: com.example.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 4.119 s <<< FAILURE! - in com.example.RunCucumberTest
+Happy Path.Enter vehicle data  Time elapsed: 0.411 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "vehicle data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Happy Path.Enter insurant data  Time elapsed: 0.024 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "insurant data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Happy Path.Enter product data  Time elapsed: 0.018 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "product data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Happy Path.Select price option  Time elapsed: 0.05 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "price option" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Happy Path.Enter quote data  Time elapsed: 0.017 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "send quote" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter quote data")
+public void i_enter_quote_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The quote should be sent")
+public void the_quote_should_be_sent() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Happy Path.Complete Happy Path  Time elapsed: 0.044 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "vehicle data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I complete the happy path")
+public void i_complete_the_happy_path() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The quote should be sent")
+public void the_quote_should_be_sent() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Insurant Data.Enter invalid first name #1  Time elapsed: 0.053 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "insurant data" page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter invalid first name {string}")
+public void i_enter_invalid_first_name(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("An error message should be displayed for first name")
+public void an_error_message_should_be_displayed_for_first_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Insurant Data.Enter invalid first name #2  Time elapsed: 0.024 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "insurant data" page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter invalid first name {string}")
+public void i_enter_invalid_first_name(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("An error message should be displayed for first name")
+public void an_error_message_should_be_displayed_for_first_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Insurant Data.Enter valid insurant data  Time elapsed: 0.041 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "insurant data" page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Password Validation.Enter invalid password #1  Time elapsed: 0.186 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "send quote" page' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter invalid password {string}")
+public void i_enter_invalid_password(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("An error message should be displayed for password")
+public void an_error_message_should_be_displayed_for_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Password Validation.Enter invalid password #2  Time elapsed: 0.021 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "send quote" page' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter invalid password {string}")
+public void i_enter_invalid_password(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("An error message should be displayed for password")
+public void an_error_message_should_be_displayed_for_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Password Validation.Enter valid password  Time elapsed: 0.109 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "send quote" page' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter quote data")
+public void i_enter_quote_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The quote should be sent")
+public void the_quote_should_be_sent() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Select Price Option.Select price option  Time elapsed: 0.046 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "price option" page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Enter Product Data.Enter product data  Time elapsed: 0.008 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "product data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Send Quote.Enter quote data  Time elapsed: 0.118 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "send quote" page' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter insurant data")
+public void i_enter_insurant_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I enter product data")
+public void i_enter_product_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I select a price option")
+public void i_select_a_price_option() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter quote data")
+public void i_enter_quote_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The quote should be sent")
+public void the_quote_should_be_sent() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Enter Vehicle Data.Enter vehicle data  Time elapsed: 0.209 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I am on the "vehicle data" page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I am on the {string} page")
+public void i_am_on_the_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I enter vehicle data")
+public void i_enter_vehicle_data() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be able to proceed to the next page")
+public void i_should_be_able_to_proceed_to_the_next_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

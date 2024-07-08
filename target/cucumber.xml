@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="16" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="1.956">
+    <testcase classname="Happy Path" name="Enter vehicle data" time="0.161">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "vehicle data" page.......................................undefined
+When I enter vehicle data...................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Happy Path" name="Enter insurant data" time="0.007">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "insurant data" page......................................undefined
+When I enter insurant data..................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Happy Path" name="Enter product data" time="0.005">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "product data" page.......................................undefined
+When I enter product data...................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Happy Path" name="Select price option" time="0.008">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "price option" page.......................................undefined
+When I select a price option................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Happy Path" name="Enter quote data" time="0.006">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "send quote" page.........................................undefined
+When I enter quote data.....................................................skipped
+Then The quote should be sent...............................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Happy Path" name="Complete Happy Path" time="0.01">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "vehicle data" page.......................................undefined
+When I complete the happy path..............................................skipped
+Then The quote should be sent...............................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Insurant Data" name="Enter invalid first name" time="0.04">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "insurant data" page......................................undefined
+And I enter vehicle data....................................................skipped
+When I enter invalid first name "A".........................................skipped
+Then An error message should be displayed for first name....................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Insurant Data" name="Enter invalid first name 2" time="0.01">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "insurant data" page......................................undefined
+And I enter vehicle data....................................................skipped
+When I enter invalid first name "ThisNameIsWayTooLongToBeValidAndShouldFail".skipped
+Then An error message should be displayed for first name....................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Insurant Data" name="Enter valid insurant data" time="0.017">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "insurant data" page......................................undefined
+And I enter vehicle data....................................................skipped
+When I enter insurant data..................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Password Validation" name="Enter invalid password" time="0.051">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "send quote" page.........................................undefined
+And I enter vehicle data....................................................skipped
+And I enter insurant data...................................................skipped
+And I enter product data....................................................skipped
+And I select a price option.................................................skipped
+When I enter invalid password "123".........................................skipped
+Then An error message should be displayed for password......................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Password Validation" name="Enter invalid password 2" time="0.031">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "send quote" page.........................................undefined
+And I enter vehicle data....................................................skipped
+And I enter insurant data...................................................skipped
+And I enter product data....................................................skipped
+And I select a price option.................................................skipped
+When I enter invalid password "password"....................................skipped
+Then An error message should be displayed for password......................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Password Validation" name="Enter valid password" time="0.007">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "send quote" page.........................................undefined
+And I enter vehicle data....................................................skipped
+And I enter insurant data...................................................skipped
+And I enter product data....................................................skipped
+And I select a price option.................................................skipped
+When I enter quote data.....................................................skipped
+Then The quote should be sent...............................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Select Price Option" name="Select price option" time="0.09">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "price option" page.......................................undefined
+And I enter vehicle data....................................................skipped
+And I enter insurant data...................................................skipped
+And I enter product data....................................................skipped
+When I select a price option................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Enter Product Data" name="Enter product data" time="0.018">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "product data" page.......................................undefined
+When I enter product data...................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Send Quote" name="Enter quote data" time="0.023">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "send quote" page.........................................undefined
+And I enter vehicle data....................................................skipped
+And I enter insurant data...................................................skipped
+And I enter product data....................................................skipped
+And I select a price option.................................................skipped
+When I enter quote data.....................................................skipped
+Then The quote should be sent...............................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Enter Vehicle Data" name="Enter vehicle data" time="0.025">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am on the "vehicle data" page.......................................undefined
+When I enter vehicle data...................................................skipped
+Then I should be able to proceed to the next page...........................skipped
+]]></failure>
+    </testcase>
+</testsuite>

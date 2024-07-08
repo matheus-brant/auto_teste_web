@@ -11,40 +11,43 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class EnterInsurantDataPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id = "firstname")
-    WebElement firstName;
+    private WebElement firstName;
 
     @FindBy(id = "lastname")
-    WebElement lastName;
+    private WebElement lastName;
 
     @FindBy(id = "birthdate")
-    WebElement birthDate;
+    private WebElement birthDate;
 
     @FindBy(id = "country")
-    WebElement country;
+    private WebElement country;
 
     @FindBy(id = "zipcode")
-    WebElement zipCode;
+    private WebElement zipCode;
 
     @FindBy(id = "occupation")
-    WebElement occupation;
+    private WebElement occupation;
 
-    @FindBy(xpath = "//input[@id='bungeejumping']")
-    WebElement bungeeJumpingCheckbox;
+    @FindBy(id = "bungeejumping")
+    private WebElement bungeeJumpingCheckbox;
 
     @FindBy(id = "nextenterproductdata")
-    WebElement nextButton;
+    private WebElement nextButton;
 
     public EnterInsurantDataPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    public void fillInsurantData() {
+        fillInsurantData("John", "Doe", "01/01/1990", "United States", "12345", "Employee", "Reading");
+    }
+
     public void fillInsurantData(String firstName, String lastName, String birthDate, String country, String zipCode, String occupation, String hobbies) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
         wait.until(ExpectedConditions.visibilityOf(this.firstName)).sendKeys(firstName);
         wait.until(ExpectedConditions.visibilityOf(this.lastName)).sendKeys(lastName);
         wait.until(ExpectedConditions.visibilityOf(this.birthDate)).sendKeys(birthDate);
@@ -52,16 +55,14 @@ public class EnterInsurantDataPage {
         wait.until(ExpectedConditions.visibilityOf(this.zipCode)).sendKeys(zipCode);
         wait.until(ExpectedConditions.visibilityOf(this.occupation)).sendKeys(occupation);
 
-        if (hobbies.contains("Bungee Jumping")) {
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", this.bungeeJumpingCheckbox);
-            wait.until(ExpectedConditions.elementToBeClickable(this.bungeeJumpingCheckbox));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", this.bungeeJumpingCheckbox);
+        if (hobbies.contains("Reading")) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", bungeeJumpingCheckbox);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", bungeeJumpingCheckbox);
         }
     }
 
     public void clickNext() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOf(nextButton));
         wait.until(ExpectedConditions.elementToBeClickable(nextButton)).click();
     }
 }

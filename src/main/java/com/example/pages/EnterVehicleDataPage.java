@@ -10,69 +10,46 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class EnterVehicleDataPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id = "make")
-    WebElement make;
-
-    @FindBy(id = "model")
-    WebElement model;
-
-    @FindBy(id = "cylindercapacity")
-    WebElement cylinderCapacity;
+    private WebElement make;
 
     @FindBy(id = "engineperformance")
-    WebElement enginePerformance;
+    private WebElement enginePerformance;
 
     @FindBy(id = "dateofmanufacture")
-    WebElement dateOfManufacture;
+    private WebElement dateOfManufacture;
 
     @FindBy(id = "numberofseats")
-    WebElement numberOfSeats;
-
-    @FindBy(id = "numberofseatsmotorcycle")
-    WebElement numberOfSeatsMotorcycle;
+    private WebElement numberOfSeats;
 
     @FindBy(id = "fuel")
-    WebElement fuelType;
-
-    @FindBy(id = "payload")
-    WebElement payload;
-
-    @FindBy(id = "totalweight")
-    WebElement totalWeight;
+    private WebElement fuelType;
 
     @FindBy(id = "listprice")
-    WebElement listPrice;
+    private WebElement listPrice;
 
     @FindBy(id = "annualmileage")
-    WebElement annualMileage;
+    private WebElement annualMileage;
 
     @FindBy(id = "nextenterinsurantdata")
-    WebElement nextButton;
+    private WebElement nextButton;
 
     public EnterVehicleDataPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public void fillVehicleData(String make, String model, String cylinderCapacity, String enginePerformance,
-                                String dateOfManufacture, String numberOfSeats, String numberOfSeatsMotorcycle,
-                                String fuelType, String payload, String totalWeight, String listPrice, String annualMileage) {
+    public void fillVehicleData() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-        wait.until(ExpectedConditions.visibilityOf(this.make)).sendKeys(make);
-        wait.until(ExpectedConditions.visibilityOf(this.model)).sendKeys(model);
-        wait.until(ExpectedConditions.visibilityOf(this.cylinderCapacity)).sendKeys(cylinderCapacity);
-        wait.until(ExpectedConditions.visibilityOf(this.enginePerformance)).sendKeys(enginePerformance);
-        wait.until(ExpectedConditions.visibilityOf(this.dateOfManufacture)).sendKeys(dateOfManufacture);
-        wait.until(ExpectedConditions.visibilityOf(this.numberOfSeats)).sendKeys(numberOfSeats);
-        wait.until(ExpectedConditions.visibilityOf(this.numberOfSeatsMotorcycle)).sendKeys(numberOfSeatsMotorcycle);
-        wait.until(ExpectedConditions.visibilityOf(this.fuelType)).sendKeys(fuelType);
-        wait.until(ExpectedConditions.visibilityOf(this.payload)).sendKeys(payload);
-        wait.until(ExpectedConditions.visibilityOf(this.totalWeight)).sendKeys(totalWeight);
-        wait.until(ExpectedConditions.visibilityOf(this.listPrice)).sendKeys(listPrice);
-        wait.until(ExpectedConditions.visibilityOf(this.annualMileage)).sendKeys(annualMileage);
+        wait.until(ExpectedConditions.visibilityOf(make)).sendKeys("BMW");
+        wait.until(ExpectedConditions.visibilityOf(enginePerformance)).sendKeys("333");
+        wait.until(ExpectedConditions.visibilityOf(dateOfManufacture)).sendKeys("02/02/2020");
+        wait.until(ExpectedConditions.visibilityOf(numberOfSeats)).sendKeys("2");
+        wait.until(ExpectedConditions.visibilityOf(fuelType)).sendKeys("Petrol");
+        wait.until(ExpectedConditions.visibilityOf(listPrice)).sendKeys("20000");
+        wait.until(ExpectedConditions.visibilityOf(annualMileage)).sendKeys("10000");
     }
 
     public void clickNext() {
