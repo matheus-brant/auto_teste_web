@@ -18,7 +18,7 @@ This project is a test automation framework developed using Selenium WebDriver a
 1. **Clone the Repository**
 
    ```sh
-   git clone [https://github.com/matheus-brant/auto_teste_web/]
+   git clone https://github.com/matheus-brant/auto_teste_web/
    cd auto_teste_web
 
 2. **Set Up the Environment**
@@ -58,10 +58,11 @@ The report will be available in the target/cucumber-reports directory.
 ## Project Structure
 
 - `src/main/java`: Contains the main code for the application (if any).
+- `org/example`: Contains the main application class Main.java.
 - `src/test/java`: Contains the test code, including:
-  - `pages`: Page classes following the POM pattern.
-  - `steps`: Step definition classes for Cucumber.
-  - `runners`: Test runner classes to execute the Cucumber tests.
+  - `com/example/pages`: Page classes following the POM pattern.
+  - `com/example/steps`: Step definition classes for Cucumber.
+  - `com/example/runners`: Test runner classes to execute the Cucumber tests.
 - `src/test/resources`: Contains Cucumber feature files written in Gherkin syntax.
 
 ## Contributing
