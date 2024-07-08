@@ -33,6 +33,7 @@ This project is a test automation framework developed using Selenium WebDriver a
 
    ```sh
    mvn clean install
+   ```
 
 ## Running the Tests
 
@@ -40,26 +41,28 @@ This project is a test automation framework developed using Selenium WebDriver a
 
 To execute all tests defined in the project, use the following command:
 
-```sh
-mvn test
+   ```sh
+   mvn test
+   ```
 
 2. **Generate Test Reports**
 
 After running the tests, you can generate an HTML report using the following command:
 
-```sh
-mvn verify
+   ```sh
+   mvn verify
+   ```
 
 The report will be available in the target/cucumber-reports directory.
 
 ## Project Structure
 
-- src/main/java: Contains the main code for the application (if any).
-- src/test/java: Contains the test code, including:
-  - pages: Page classes following the POM pattern.
-  - steps: Step definition classes for Cucumber.
-  - runners: Test runner classes to execute the Cucumber tests.
-- src/test/resources: Contains Cucumber feature files written in Gherkin syntax.
+- `src/main/java`: Contains the main code for the application (if any).
+- `src/test/java`: Contains the test code, including:
+  - `pages`: Page classes following the POM pattern.
+  - `steps`: Step definition classes for Cucumber.
+  - `runners`: Test runner classes to execute the Cucumber tests.
+- `src/test/resources`: Contains Cucumber feature files written in Gherkin syntax.
 
 ## Contributing
 
@@ -67,8 +70,8 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Fork the Project
 
-#Create your Feature Branch (git checkout -b feature/AmazingFeature)
-#Commit your Changes (git commit -m 'Add some AmazingFeature')
-#Push to the Branch (git push origin feature/AmazingFeature)
-#Open a Pull Request
+1. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+2. Commit your Changes (git commit -m 'Add some AmazingFeature')
+3. Push to the Branch (git push origin feature/AmazingFeature)
+4. Open a Pull Request
 
